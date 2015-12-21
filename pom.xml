@@ -6,7 +6,7 @@
   <artifactId>simple_spring_webapp</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>simple_spring_webapp Maven Webapp</name>
+  <name>simple_spring_webapp</name>
   <url>http://maven.apache.org</url>
 
     <properties>
