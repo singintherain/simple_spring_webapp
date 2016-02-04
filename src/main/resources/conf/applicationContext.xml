@@ -6,9 +6,12 @@
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
        ">
-    <!-- 通过web.xml中的 org.springframework.web.context.ContextLoaderListener 加载的  -->
-    <!-- 请参考 http://jinnianshilongnian.iteye.com/blog/1602617  -->
     <!--<context:annotation-config></context:annotation-config>-->
     <!--<context:component-scan base-package="com.lvsong.dao com.lvsong.dao com.lvsong.domain">-->
     <!--</context:component-scan>-->
+    <!--<context:spring-configured>com.lvsong.config</context:spring-configured>-->
+    <context:component-scan base-package="com.lvsong.config"/>
+    <context:component-scan base-package="com.lvsong.dao"/>
+    <context:component-scan base-package="com.lvsong.service"/>
+    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer"/>
 </beans>
