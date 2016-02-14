@@ -132,6 +132,15 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.3.0.v20150612</version>
             </plugin>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <server>myTomcatServer</server>
+                    <path>/simple_spring_web</path>
+                    <url>http://localhost:8080/manager/text</url>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
